@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Appointments</title>
+</head>
+<body>
+    <h1>My Appointments</h1>
+    <nav>
+        <a href="user_dashboard.html">Dashboard</a>
+    </nav>
+
+    <div>
+        <a href="#upcoming">Upcoming</a> | 
+        <a href="#past">Past</a> | 
+        <a href="#cancelled">Cancelled</a>
+    </div>
+
+    <section id="upcoming">
+        <h2>Upcoming Appointments</h2>
+        <ul>
+            <li>Service: Dentist Checkup, Provider: Dr. Smile, Date: 2024-08-15, Time: 10:00 AM, Status: Confirmed <button>Cancel</button></li>
+            <li>Service: Haircut, Provider: Stylez Salon, Date: 2024-08-16, Time: 02:00 PM, Status: Confirmed <button>Cancel</button></li>
+        </ul>
+    </section>
+
+    <section id="past" style="display: none;"> <!-- Hidden by default for simplicity -->
+        <h2>Past Appointments</h2>
+        <ul>
+            <li>Service: Consultation, Provider: Dr. Advisor, Date: 2024-01-20, Time: 03:00 PM, Status: Completed</li>
+        </ul>
+    </section>
+
+    <section id="cancelled" style="display: none;"> <!-- Hidden by default for simplicity -->
+        <h2>Cancelled Appointments</h2>
+        <ul>
+            <li>Service: Yoga Class, Provider: Flex Studio, Date: 2024-07-01, Time: 06:00 PM, Status: Cancelled</li>
+        </ul>
+    </section>
+</body>
+</html>

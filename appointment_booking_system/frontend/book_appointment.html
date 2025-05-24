@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+</head>
+<body>
+    <h1>Book a New Appointment</h1>
+    <nav>
+        <a href="user_dashboard.html">Dashboard</a>
+    </nav>
+
+    <form action="#" method="post">
+        <div>
+            <label for="service_type">Service Type:</label>
+            <select id="service_type" name="service_type">
+                <option>Select Service...</option>
+                <option value="dental">Dental Checkup</option>
+                <option value="haircut">Haircut</option>
+                <option value="consultation">Consultation</option>
+            </select>
+        </div>
+        <div>
+            <label for="provider">Provider:</label>
+            <select id="provider" name="provider">
+                <option>Select Provider...</option>
+                <option value="dr_smith">Dr. Smith (Dentist)</option>
+                <option value="stylez_salon">Stylez Salon (Hair)</option>
+                <option value="dr_advisor">Dr. Advisor (Consultant)</option>
+            </select>
+        </div>
+        <div>
+            <label for="appointment_date">Date:</label>
+            <input type="date" id="appointment_date" name="appointment_date">
+        </div>
+
+        <h2>Available Times</h2>
+        <ul>
+            <li>09:00 AM - 09:30 AM <button type="button">Select</button></li>
+            <li>10:00 AM - 10:30 AM <button type="button">Select</button></li>
+            <li>11:00 AM - 11:30 AM <button type="button">Select</button></li>
+            <li>02:00 PM - 02:30 PM <button type="button">Select</button></li>
+        </ul>
+
+        <h2>Confirm Details</h2>
+        <p>Service: <span id="confirm_service">...</span></p>
+        <p>Provider: <span id="confirm_provider">...</span></p>
+        <p>Date: <span id="confirm_date">...</span></p>
+        <p>Time: <span id="confirm_time">...</span></p>
+
+        <div>
+            <button type="submit">Confirm Booking</button>
+        </div>
+    </form>
+</body>
+</html>
