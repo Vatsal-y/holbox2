@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Availability</title>
+</head>
+<body>
+    <h1>Manage Your Availability</h1>
+    <nav>
+        <a href="provider_dashboard.html">Dashboard</a>
+    </nav>
+
+    <section>
+        <h2>Set Weekly Recurring Availability</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="day_of_week">Day:</label>
+                <select id="day_of_week" name="day_of_week">
+                    <option value="mon">Monday</option>
+                    <option value="tue">Tuesday</option>
+                    <option value="wed">Wednesday</option>
+                    <option value="thu">Thursday</option>
+                    <option value="fri">Friday</option>
+                    <option value="sat">Saturday</option>
+                    <option value="sun">Sunday</option>
+                </select>
+                <label for="start_time_recurring">Start Time:</label>
+                <input type="time" id="start_time_recurring" name="start_time_recurring">
+                <label for="end_time_recurring">End Time:</label>
+                <input type="time" id="end_time_recurring" name="end_time_recurring">
+                <button type="submit">Add/Update Day</button>
+            </div>
+            <!-- Placeholder for listing existing recurring slots -->
+            <ul>
+                <li>Monday: 09:00 AM - 05:00 PM <button>Edit</button> <button>Remove</button></li>
+            </ul>
+        </form>
+    </section>
+
+    <section>
+        <h2>Add Time Off / Specific Unavailability</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="time_off_date_start">Start Date:</label>
+                <input type="date" id="time_off_date_start" name="time_off_date_start">
+                <label for="time_off_time_start">Start Time:</label>
+                <input type="time" id="time_off_time_start" name="time_off_time_start">
+            </div>
+            <div>
+                <label for="time_off_date_end">End Date:</label>
+                <input type="date" id="time_off_date_end" name="time_off_date_end">
+                <label for="time_off_time_end">End Time:</label>
+                <input type="time" id="time_off_time_end" name="time_off_time_end">
+            </div>
+            <div>
+                <label for="reason">Reason (Optional):</label>
+                <input type="text" id="reason" name="reason">
+            </div>
+            <button type="submit">Add Time Off</button>
+        </form>
+        <!-- Placeholder for listing existing time off periods -->
+        <ul>
+            <li>2024-09-01 10:00 AM - 2024-09-01 02:00 PM (Vacation) <button>Remove</button></li>
+        </ul>
+    </section>
+</body>
+</html>

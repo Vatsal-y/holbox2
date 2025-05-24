@@ -1,0 +1,35 @@
+# This file will list the Python package dependencies for the backend services.
+
+# --- Voice Interaction Dependencies ---
+# These would be uncommented and potentially versioned when integrating
+# with actual cloud services.
+
+# Google Cloud Speech-to-Text client library
+# google-cloud-speech
+
+# Google Cloud Text-to-Speech client library
+# google-cloud-texttospeech
+
+# Example of other potential libraries:
+# For alternative STT/TTS or NLU:
+# vosk
+# pyttsx3
+# spaCy
+
+# --- Other Backend Dependencies ---
+# (e.g., web framework, database ORM, etc.)
+fastapi
+uvicorn[standard] # For running the FastAPI app
+pydantic
+python-jose[cryptography] # For JWT tokens
+passlib[bcrypt] # For password hashing
+# sqlalchemy
+# psycopg2-binary
+
+# --- Email Sending (Optional, for future enhancement) ---
+# For more robust email sending (optional, consider later):
+# yagmail
+# Flask-Mail (if using Flask)
+
+# --- Testing ---
+pytest
